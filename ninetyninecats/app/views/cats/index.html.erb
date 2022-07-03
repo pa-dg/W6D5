@@ -1,0 +1,9 @@
+<h1> All Cats!</h1>
+<ul>
+    <% @all_cats.each do |cat| %>
+        <li>
+        <%# render 'file name without the _', options hash%>
+            <%= render 'cat', cat: cat, action: :index %>
+        </li>
+    <% end %>
+</ul>
